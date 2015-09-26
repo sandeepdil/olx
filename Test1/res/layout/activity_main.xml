@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.test1.MainActivity" 
+    android:orientation="vertical">
+    
+    <TextView
+	        style="@style/labelStyles"
+	        android:layout_width="match_parent"
+	        android:visibility="gone"
+	        android:id= "@+id/errorMsg"
+	        android:gravity="center_horizontal"
+	        android:text="" 
+	        android:textColor="@android:color/holo_red_dark"
+	/>
+    
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    >
+	    <TextView
+	        
+	        style="@style/labelStyles"
+	        android:text="Title" />
+	    
+    	<EditText
+    	 	style="@style/EditStyles"
+	        android:id="@+id/title"   
+    	 >
+    	 
+    	</EditText>
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+     >
+	    <TextView
+	        style="@style/labelStyles"
+	        android:text="Please select Image" />
+	    
+    	<ImageView
+    	 	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/imageView" 
+	        android:src="@drawable/ic_launcher" 
+    	 />
+    	 
+    	
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+     >
+	    <TextView
+	        style="@style/labelStyles"
+	        android:text="Location" />
+	    
+    	<Spinner
+    	 	style="@style/EditStyles"
+	        android:id="@+id/spinnerLocation"
+	        android:entries="@array/location"
+    	 />
+    	 
+    	
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+     >
+	    <TextView
+	        style="@style/labelStyles"
+	        android:text="Categories" />
+	    
+    	<Spinner
+    	 	style="@style/EditStyles"
+	        android:id="@+id/spinnerCategories"  
+	        android:entries="@array/category" 
+    	 />
+    	 
+    	
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+     >
+	    <TextView
+	        style="@style/labelStyles"
+	        android:text="Price" />
+	    
+    	<EditText
+    	 	style="@style/EditStyles"
+    	 	android:inputType="number"
+	        android:id="@+id/price"   
+    	 />
+    	 
+    	
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center_horizontal"
+     >
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Save" 
+	        android:id ="@+id/save"
+	        />
+	    
+    	<Button
+    	 	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/cancel"  
+	        android:text="Cancel" 
+    	 />
+    	 
+    	
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         	android:id="@+id/list"
+         >
+            
+        </ListView>
+        
+    </ScrollView>
+        
+    
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Chennai</item>
+        <item>Nagpur</item>
+        <item>Pune</item>
+        <item>Hyderabad</item>
+        <item>Banglore</item>
+        <item>Kanpur</item>
+        <item>Agra</item>
+    </string-array>
+ 
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Electronics</item>
+        <item>Real Estate</item>
+        <item>Kitchen</item>
+        <item>Home Furnishing</item>
+        <item>Mobile</item>
+        <item>Mobile</item>
+        <item>Cars</item>
+    </string-array>
+</resources>
